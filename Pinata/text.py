@@ -1,6 +1,6 @@
 
-email = 'klm6564@naver.com'
-password = 'Pinata324!@'
+email = ''
+password = ''
 
 username="noname"
 NFTname = "sampelNFT"
