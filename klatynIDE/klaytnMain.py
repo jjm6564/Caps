@@ -80,7 +80,7 @@ def transaction():
     driver.find_element_by_xpath('//*[@id="importKeyByKeystore"]/dl[1]/dd/label').click()
     auto.keyStore()
     driver.implicitly_wait(3)
-    driver.find_element_by_xpath('//*[@id="keyStorePasswordField"]').send_keys('Graphics405!')
+    driver.find_element_by_xpath('//*[@id="keyStorePasswordField"]').send_keys('')
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="modal-footer-ok"]').click()
 
@@ -96,7 +96,7 @@ def transaction():
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="runTabView"]/div/div[2]/div[2]/div[1]/div[1]/div[2]/div/div[3]/button').click()
     time.sleep(1)
-    driver.find_element_by_xpath('//*[@id="runTabView"]/div/div[2]/div[2]/div[3]/input').send_keys('0x4c7941DcA75652A3e21cAe23b2f26632B42170AC')
+    driver.find_element_by_xpath('//*[@id="runTabView"]/div/div[2]/div[2]/div[3]/input').send_keys('')
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="runAndDeployAtAdressButton"]').click()
     time.sleep(1)
@@ -106,15 +106,15 @@ def transaction():
     
 
 def sendNFT():
-    driver.find_element_by_xpath('//*[@id="instance0x4c7941DcA75652A3e21cAe23b2f26632B42170AC"]/div[2]/div[19]/div[1]/div[1]/i').click()
+    driver.find_element_by_xpath('//*[@id=""]/div[2]/div[19]/div[1]/div[1]/i').click()
     time.sleep(1)
-    driver.find_element_by_xpath('//*[@id="instance0x4c7941DcA75652A3e21cAe23b2f26632B42170AC"]/div[2]/div[19]/div[1]/div[2]/div/div[2]/div/input').send_keys(text.json_ipfs)
+    driver.find_element_by_xpath('//*[@id=""]/div[2]/div[19]/div[1]/div[2]/div/div[2]/div/input').send_keys(text.json_ipfs)
     time.sleep(1)
-    driver.find_element_by_xpath('//*[@id="instance0x4c7941DcA75652A3e21cAe23b2f26632B42170AC"]/div[2]/div[3]/div[1]/div[2]/div/div[2]/div[1]/input').send_keys(info.walletAddress)
+    driver.find_element_by_xpath('//*[@id=""]/div[2]/div[3]/div[1]/div[2]/div/div[2]/div[1]/input').send_keys(info.walletAddress)
     time.sleep(1)
-    driver.find_element_by_xpath('//*[@id="instance0x4c7941DcA75652A3e21cAe23b2f26632B42170AC"]/div[2]/div[3]/div[1]/div[2]/div/div[2]/div[2]/input').send_keys(text.count)
+    driver.find_element_by_xpath('//*[@id=""]/div[2]/div[3]/div[1]/div[2]/div/div[2]/div[2]/input').send_keys(text.count)
     time.sleep(1)
-    driver.find_element_by_xpath('//*[@id="instance0x4c7941DcA75652A3e21cAe23b2f26632B42170AC"]/div[2]/div[3]/div[1]/div[2]/div/div[3]/button').click()
+    driver.find_element_by_xpath('//*[@id=""]/div[2]/div[3]/div[1]/div[2]/div/div[3]/button').click()
     time.sleep(5)
     
     #이후 minting 자동화 하면 됩니다.
